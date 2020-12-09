@@ -12,11 +12,11 @@
 		};
 		$scope.regions = JSON.parse('<?= $regions ?>');
 		$scope.feedback = "";
-		$scope.showFeedback = false;
-		$scope.stay = false;
 		$scope.image = {
 			image: ""
 		};
+		$scope.mediaFeedback = "";
+		$scope.showmediaFeedback = false;
 		$scope.images = JSON.parse('<?= $this->media_model->get_media('image'); ?>');
 
 		$scope.submit = function(event) {
@@ -48,7 +48,7 @@
 						if ($scope.stay == false) {
 							var data = resp.data;
 							setTimeout(() => {
-								window.location = `<?= base_url() ?>admin/dam/edit/${data.state_id}`;
+								window.location = `<?= base_url() ?>admin/state/edit/${data.state_id}`;
 							}, 2000);
 						}
 					} else {

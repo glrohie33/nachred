@@ -89,7 +89,7 @@
 						});
 						var data = resp.data;
 						setTimeout(() => {
-							window.location = `<?= base_url() ?>admin/state/edit/${data.dam_id}`;
+							window.location = `<?= base_url() ?>admin/dam/edit/${data.dam_id}`;
 						}, 2000);
 					} else {
 						$scope.feedback = "<p>success new dam has been created</p>";

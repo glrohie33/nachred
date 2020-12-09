@@ -5,7 +5,7 @@
 </style>
 <div class="main-content">
 	<div class="container-fluid">
-		<h3 class="page-title">Add Region</h3>
+		<h3 class="page-title">Add State</h3>
 		<div class="row">
 			<div class="col-md-6" style="margin:0px auto;float:none;" ng-app='myApp' ng-controller='myCtrl'>
 				<!-- BUTTONS -->
@@ -67,7 +67,7 @@
 									<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
 										<div class="alert alert-info " ng-show="mediashowFeedback">
 											<button type="button" class="close" ng-click="hideFeedback()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<div ng-bind-html='feedback'>
+											<div ng-bind-html='mediafeedback'>
 											</div>
 										</div>
 										<form enctype="multipart/form-data" id="upload">

@@ -1,6 +1,6 @@
 <div class="main-content">
 	<div class="container-fluid">
-		<h3 class="page-title">Region</h3>
+		<h3 class="page-title">Sliders</h3>
 		<div class="row">
 			<div class="col-md-12">
 				<!-- BASIC TABLE -->
