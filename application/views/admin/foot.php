@@ -1,10 +1,10 @@
-<script src="<?=base_url()?>assets/back/vendor/jquery/jquery.min.js"></script>
-	<script src="<?=base_url()?>assets/back/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="<?=base_url()?>assets/back/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="<?=base_url()?>assets/back/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="<?=base_url()?>assets/back/vendor/chartist/js/chartist.min.js"></script>
-	<script src="<?=base_url()?>assets/back/js/klorofil-common.js"></script>
-	<script>
+<script src="<?= base_url() ?>assets/back/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>assets/back/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= base_url() ?>assets/back/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?= base_url() ?>assets/back/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="<?= base_url() ?>assets/back/vendor/chartist/js/chartist.min.js"></script>
+<script src="<?= base_url() ?>assets/back/js/klorofil-common.js"></script>
+<!-- <script>
 	$(function() {
 		var data, options;
 
@@ -121,5 +121,5 @@
 		}
 
 	});
-	</script>
+	</script> -->
 </body>

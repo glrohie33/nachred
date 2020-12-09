@@ -3,15 +3,7 @@ class Migration_Edit_state3 extends CI_Migration {
 
     public function up()
     {
-            $field = array('location'=>array(
-                'type'=>'TEXT'
-            ));
-            $field = array('hydrology'=>array(
-                'type'=>'TEXT'
-            ));
-            $field = array('physio'=>array(
-                'type'=>'TEXT'
-            ));
+           
             $field = array('ownership'=>array(
                 'type'=>'TEXT'
             ));
