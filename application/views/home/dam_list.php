@@ -18,7 +18,7 @@
 
 <section class="inner-banner">
 	<div class="container">
-		<h3 class="text-center"><?= $title ?> State</h3>
+		<h3 class="text-center"><?= $title ?></h3>
 	</div>
 </section>
 <div class="breadcrumb-agile">

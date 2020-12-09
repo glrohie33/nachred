@@ -200,7 +200,7 @@
 
 											<label>upload files</label>
 											<br>
-											<button type="button" class="btn btn-primary btn-sm" ng-click="upload()"> Upload</button>
+											<button type="button" class="btn btn-primary btn-sm" ng-click="upload('upload')"> Upload</button>
 										</div>
 										<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 											<div class="row images">
@@ -245,13 +245,13 @@
 												<div ng-bind-html='mediafeedback'>
 												</div>
 											</div>
-											<form enctype="multipart/form-data" id="upload">
+											<form enctype="multipart/form-data" id="upload1">
 												<input type="file" class="form-control" placeholder="region name" name="files[]" multiple>
 											</form>
 
 											<label>upload files</label>
 											<br>
-											<button type="button" class="btn btn-primary btn-sm" ng-click="upload()"> Upload</button>
+											<button type="button" class="btn btn-primary btn-sm" ng-click="upload('upload1')"> Upload</button>
 										</div>
 										<div class="tab-pane" id="images" role="tabpanel" aria-labelledby="profile-tab">
 											<div class="row images">

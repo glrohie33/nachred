@@ -106,9 +106,9 @@
 		};
 		$scope.mediafeedback = "";
 		$scope.mediashowFeedback = false;
-		$scope.upload = function() {
+		$scope.upload = function(form) {
 
-			var formdata = new FormData(document.querySelector('#upload'));
+			var formdata = new FormData(document.querySelector(`#${form}`));
 			formdata.append('<?= $this->security->get_csrf_token_name() ?>', '<?= $this->security->get_csrf_hash() ?>');
 			$.ajax({
 				url: "<?= base_url() ?>admin/media/upload",
