@@ -67,7 +67,7 @@
 					$scope.$apply(() => {
 						$scope.mediafeedback = resp.feedback;
 						$scope.mediashowFeedback = true;
-						$arr = $scope.images.concat(resp.data);
+						$arr =[...resp.data,...$scope.images];
 						$scope.images = $arr;
 						document.querySelector('#upload').reset();
 					});

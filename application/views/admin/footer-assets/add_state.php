@@ -39,8 +39,9 @@
 					var resp = JSON.parse(resp);
 					if (resp.status) {
 						$scope.$apply(() => {
-							$scope.regionName = "";
-							$scope.regionDescription = "";
+							$scope.stateName = "";
+							$scope.stateDescription = "";
+							$scope.image.image = "";
 							$scope.feedback = "<p>success new state has been created</p>";
 							$scope.showFeedback = true;
 						});
@@ -84,7 +85,7 @@
 					$scope.$apply(() => {
 						$scope.mediafeedback = resp.feedback;
 						$scope.mediashowFeedback = true;
-						$arr = $scope.images.concat(resp.data);
+						$arr = [...resp.data, ...$scope.images];
 						$scope.images = $arr;
 						document.querySelector('#upload').reset();
 					});

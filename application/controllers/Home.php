@@ -36,6 +36,7 @@ class Home extends CI_Controller
 			$this->db->from('dam');
 			$this->db->join('region', 'region.region_id = dam.region_id', 'inner');
 			$this->db->join('state', 'state.state_id = dam.state_id', 'inner');
+			$this->db->where('dam.slug', $slug);
 			$dams = $this->db->get()->row();
 
 			$page_data['dam'] = $dams;

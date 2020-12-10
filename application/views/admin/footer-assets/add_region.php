@@ -36,6 +36,7 @@
 						$scope.$apply(() => {
 							$scope.regionName = "";
 							$scope.regionDescription = "";
+							$scope.image.image = "";
 							$scope.feedback = "<p>success new region has been created</p>";
 							$scope.showFeedback = true;
 						});
@@ -79,7 +80,7 @@
 					$scope.$apply(() => {
 						$scope.mediafeedback = resp.feedback;
 						$scope.mediashowFeedback = true;
-						$arr = $scope.images.concat(resp.data);
+						$arr =[resp.data,$scope.images];
 						$scope.images = $arr;
 						document.querySelector('#upload').reset();
 					});

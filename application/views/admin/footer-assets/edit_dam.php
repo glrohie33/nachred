@@ -126,8 +126,9 @@
 					var resp = JSON.parse(resp);
 					$scope.$apply(() => {
 						$scope.mediafeedback = resp.feedback;
+						$arr =[...resp.data,...$scope.images];
 						$scope.mediashowFeedback = true;
-						$arr = $scope.images.concat(resp.data);
+
 						$scope.images = $arr;
 						document.querySelector('#upload').reset();
 					});

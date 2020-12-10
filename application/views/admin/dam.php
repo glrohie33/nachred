@@ -7,7 +7,7 @@
 				<div class="panel">
 					<div class="panel-heading">
 						<h3 class="panel-title">All Dams</h3>
-						<a class="btn btn-default btn-sm" href="<?= base_url() ?>admin/slider/add" style="float:right;">Add New</a>
+						<a class="btn btn-default btn-sm" href="<?= base_url() ?>admin/dam/add" style="float:right;">Add New</a>
 					</div>
 					<div class="panel-body" ng-app="myApp" ng-controller='myCtrl' ng-init="setPaginations()">
 						<table class="table">
@@ -28,8 +28,8 @@
 									<td>{{$index + 1}}</td>
 									<td>{{x.dam_name}}</td>
 									<td>{{x.region_name}}</td>
-									<td> <img ng-src="{{x.feature_img}}" alt="" height="70px"></td>
 									<td>{{x.state_name}}</td>
+									<td> <img ng-src="{{x.feature_img}}" alt="" height="70px"></td>
 									<td>{{x.created_at}}</td>
 									<td>{{x.updated_at}}</td>
 									<td>
